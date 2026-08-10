@@ -7,7 +7,7 @@
   height: 100dvh;
   background-color: var(--bg-color);
   color: var(--txt-color);
-  font-family: "orbit", sans-serif;
+  font-family: "ridi", sans-serif;
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@ button:hover {
 }
 
 input {
-  font-family: "orbit", sans-serif;
+  font-family: "ridi", sans-serif;
   box-sizing: border-box;
   min-width: 0;
   padding: 0.5rem 0;
@@ -106,9 +106,9 @@ input:focus {
 }
 
 @font-face {
-  font-family: "orbit";
+  font-family: "ridi";
   font-style: normal;
-  font-weight: 400;
-  src: url(/font/orbit.woff2) format("woff2");
+  font-weight: normal;
+  src: url(/font/ridi-batang.woff2) format("woff2");
 }
 
