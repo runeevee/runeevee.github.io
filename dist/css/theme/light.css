@@ -1,0 +1,8 @@
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --bg-color-focus: #dfdfdf;
+  --txt-color: #1a1a1a;
+  --txt-color-err: #ff5d5d;
+  --line-color: #cccccc;
+  --line-color-focus: #808080;
+}

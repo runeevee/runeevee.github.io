@@ -1,0 +1,113 @@
+:root {
+  --anim-delay: 0.08s;
+  --anim-duration: 0.2s;
+  --anim-move-amount: 1rem;
+}
+
+#root {
+  transition: background-color var(--anim-delay) ease-in-out 0s;
+}
+
+button {
+ transition:
+  background-color var(--anim-delay) ease-in-out 0s,
+  outline var(--anim-delay) ease-in-out 0s;
+}
+
+.fade-in {
+  animation: fadeIn var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.fade-out {
+  animation: fadeOut var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+
+.slide-fade-in-top {
+  animation:
+    fadeIn var(--anim-duration) ease-in-out 0s 1 normal both,
+    fromTop var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-in-bottom {
+  animation:
+    fadeIn var(--anim-duration) ease-in-out 0s 1 normal both,
+    fromBottom var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-in-left {
+  animation:
+    fadeIn var(--anim-duration) ease-in-out 0s 1 normal both,
+    fromLeft var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-in-right {
+  animation:
+    fadeIn var(--anim-duration) ease-in-out 0s 1 normal both,
+    fromRight var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-out-top {
+  animation:
+    fadeOut var(--anim-duration) ease-in-out 0s 1 normal both,
+    toTop var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-out-bottom {
+  animation:
+    fadeOut var(--anim-duration) ease-in-out 0s 1 normal both,
+    toBottom var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-out-left {
+  animation:
+    fadeOut var(--anim-duration) ease-in-out 0s 1 normal both,
+    toLeft var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+.slide-fade-out-right {
+  animation:
+    fadeOut var(--anim-duration) ease-in-out 0s 1 normal both,
+    toRight var(--anim-duration) ease-in-out 0s 1 normal both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes fromTop {
+  from { transform: translateY(calc(-1 * var(--anim-move-amount))); }
+  to { transform: translateY(0); }
+}
+@keyframes toTop {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-1 * var(--anim-move-amount))); }
+}
+@keyframes fromBottom {
+  from { transform: translateY(var(--anim-move-amount)); }
+  to { transform: translateY(0); }
+}
+@keyframes toBottom {
+  from { transform: translateY(0); }
+  to { transform: translateY(var(--anim-move-amount)); }
+}
+@keyframes fromLeft {
+  from { transform: translateX(calc(-1 * var(--anim-move-amount))); }
+  to { transform: translateX(0); }
+}
+@keyframes toLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-1 * var(--anim-move-amount))); }
+}
+@keyframes fromRight {
+  from { transform: translateX(var(--anim-move-amount)); }
+  to { transform: translateX(0); }
+}
+@keyframes toRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(var(--anim-move-amount)); }
+}
+
+.delayed:nth-child(1)  { animation-delay: calc(var(--anim-delay) * 0); }
+.delayed:nth-child(2)  { animation-delay: calc(var(--anim-delay) * 1); }
+.delayed:nth-child(3)  { animation-delay: calc(var(--anim-delay) * 2); }
+.delayed:nth-child(4)  { animation-delay: calc(var(--anim-delay) * 3); }
+.delayed:nth-child(5)  { animation-delay: calc(var(--anim-delay) * 4); }
+.delayed:nth-child(6)  { animation-delay: calc(var(--anim-delay) * 5); }
+.delayed:nth-child(7)  { animation-delay: calc(var(--anim-delay) * 6); }
+.delayed:nth-child(8)  { animation-delay: calc(var(--anim-delay) * 7); }
