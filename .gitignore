@@ -9,7 +9,7 @@ package-lock.json
 # project
 public
 src
-index.html
+/index.html
 tsconfig.json
 vite.config.ts
 
