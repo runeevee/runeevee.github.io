@@ -1,5 +1,5 @@
 :root {
-  --corner-radius: 0.8rem;
+  --corner-radius: 0.5rem;
 }
 
 #root {
@@ -8,7 +8,6 @@
   background-color: var(--bg-color);
   color: var(--txt-color);
   font-family: "ridi", sans-serif;
-  overflow: hidden;
 }
 
 body { background-color: #000; }
@@ -24,32 +23,12 @@ hr {
   padding: 0;
 }
 
-.subtitle::before {
-  content: "";
-  flex: 0 0 1rem;
-  height: 1px;
-  background-color: var(--line-color);
-  margin-right: 0.25rem;
-}
-
-.subtitle {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.subtitle::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: var(--line-color);
-  margin-left: 0.25rem;
-}
 
 img {
   border-radius: var(--corner-radius);
   user-select: none;
 }
+
 
 button {
   border: none;
@@ -83,6 +62,26 @@ input:focus {
   /* outline: solid 1px var(--line-color-focus); */
 }
 
+.subtitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.subtitle::before {
+  content: "";
+  flex: 0 0 1rem;
+  height: 1px;
+  background-color: var(--line-color);
+  margin-right: 0.25rem;
+}
+.subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--line-color);
+  margin-left: 0.25rem;
+}
+
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
@@ -91,7 +90,7 @@ input:focus {
 }
 
 .mtrl-icon {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 1.2rem;
