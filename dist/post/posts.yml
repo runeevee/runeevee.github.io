@@ -1,3 +1,8 @@
 posts:
-  - directx12:
+  - "directx12":
     - "DirectX 시작하기 - 1"
+  - "math":
+    - "벡터 내적"
+    - "행렬의 곱셈"
+  - "구현한 것":
+    - "DirectX12 렌더러"
