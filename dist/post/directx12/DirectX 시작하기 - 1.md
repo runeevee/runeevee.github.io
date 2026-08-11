@@ -1,5 +1,6 @@
 1786382118
-DirectX 시작하기 - 1
+directx12
+DirectX12 시작하기 - 1
 
 ### Factory
 후술할 DirectX의 요소들을 생성하기 위해서는
